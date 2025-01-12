@@ -5,6 +5,6 @@
 
 <br>
 
-[img]([https://imgur.com/NuJGeDQ](https://imgur.com/NuJGeDQ))
+![gif](https://i.imgur.com/NuJGeDQ.gif)
 
 <br>
