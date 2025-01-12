@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport"
+        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/quasar@2.1.0/dist/quasar.prod.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet"
+        type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@2.1.0/dist/quasar.umd.prod.js" defer></script>
+    <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<!-- This is where you want to replace with your audio -->
+
+<audio autoplay loop id="audio" src="/assets/audio/GTA4.mp3"></audio>
+
+<body>
+    <div id="loading-main" style="min-height: auto;">
+
+        <q-carousel animated v-model="firstslide" :autoplay="secondap" ref="carousel" infinite>
+            <q-carousel-slide :name="1" img-src="/assets/images/LC1.png"></q-carousel-slide>
+            <q-carousel-slide :name="2" img-src="/assets/images/LC2.png"></q-carousel-slide>
+            <q-carousel-slide :name="3" img-src="/assets/images/LC3.png"></q-carousel-slide>
+            <q-carousel-slide :name="4" img-src="/assets/images/LC4.png"></q-carousel-slide>
+            <q-carousel-slide :name="5" img-src="/assets/images/LC5.png"></q-carousel-slide>
+            <q-carousel-slide :name="6" img-src="/assets/images/LC6.png"></q-carousel-slide>
+            <q-carousel-slide :name="7" img-src="/assets/images/LC7.png"></q-carousel-slide>
+            <q-carousel-slide :name="8" img-src="/assets/images/LC8.png"></q-carousel-slide>
+        </q-carousel>
+        <img class="cursor-none brand-logo" src="./prueba.png"></img>
+        <div class="absolute-bottom q-pa-xl">
+            <q-card flat style="width: auto; background: transparent;">
+                <div class="juanidiv">
+                    <span
+                        style="color: aliceblue; font-size: 36px; margin: 0; text-shadow: 0 0 20px rgba(255, 255, 255, 0.342); z-index: 9999;">BIENVENIDO
+                        A LIBERTY CITY</span>
+                    <p>Cargando el servidor
+                        <span class="dot-animation">
+                            <span class="dot-1">.</span>
+                            <span class="dot-2">.</span>
+                            <span class="dot-3">.</span>
+                        </span>
+                    </p>
+                </div>
+                <q-card-section class="row items-center no-wrap">
+                    <q-space></q-space>
+                    <q-btn :ripple="false" flat size="xl" icon="downloading" color="white"
+                        @click="download = true"></q-btn>
+                    <div class="loadingbar">
+                        <div class="loadbar">
+                            <div class="thingy"></div>
+                        </div>
+                    </div>
+                </q-card-section>
+            </q-card>
+        </div>
+    </div>
+</body>
+
+</html>

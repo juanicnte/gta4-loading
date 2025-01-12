@@ -1,0 +1,196 @@
+/* Customize style for dialog menus and carousels here */
+@font-face {
+    font-family: 'odyssey';
+    src: url('Pricedown Bl.otf') format('truetype');
+}
+
+.brand-logo {
+    width: 6rem !important;
+    top: 2vh;
+    position: absolute;
+    right: 5vw;
+}
+
+.text-detailbutton {
+    color: rgb(103, 108, 111) !important;
+}
+
+.bg-bgbutton {
+    background: rgb(103, 108, 111) !important;
+}
+
+.text-togglecolor {
+    color: rgb(220 20 60) !important;
+}
+
+.loadingbar {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.loadbar {
+    width: auto;
+    height: 2.5vh;
+    background: rgb(103, 108, 111);
+    box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+    z-index: 9999;
+}
+
+.thingy {
+    width: auto;
+    height: 2.5vh;
+    background-color: rgba(0, 229, 255, 0.61);
+    background: linear-gradient(33deg, rgba(56, 107, 120, 0.8), #30c0aa);
+    z-index: 9999;
+    border-radius: 3px;
+}
+
+.q-carousel {
+    background: rgb(0, 0, 0) !important;
+    height: auto !important;
+}
+
+.q-mb-md-d {
+    padding-top: 0px !important;
+    padding-left: 0.3vw !important;
+}
+
+.q-toggle {
+    margin-left: -0.5vw !important;
+}
+
+.q-toggle__label {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+.q-card {
+    z-index: 9999 !important;
+}
+
+.q-btn {
+    z-index: 9999 !important;
+}
+
+html,
+body {
+    background: transparent !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    -o-user-select: none !important;
+    user-select: none !important;
+}
+
+body.desktop.no-touch.within-iframe.body--light.q-body--prevent-scroll {
+    position: relative !important;
+}
+
+.absolute-full,
+.fixed-full,
+.fullscreen {
+    top: -3px !important;
+    bottom: -1px !important;
+}
+
+.absolute-bottom,
+.fixed-bottom {
+    z-index: 1 !important;
+}
+
+span.q-btn__content.text-center.col.items-center.q-anchor--skip.justify-center.column {
+    text-transform: none !important;
+}
+
+.q-avatar__content.row.flex-center.overflow-hidden {
+    overflow: initial !important;
+}
+
+.q-carousel .q-carousel--padding,
+.q-carousel__slide {
+    padding-top: 0px !important;
+}
+
+.scroll {
+    overflow: hidden !important;
+}
+
+.q-focus-helper {
+    opacity: 0 !important;
+}
+
+.text-outline {
+    color: white;
+    /* Color del relleno de la letra */
+    -webkit-text-stroke: 1px black;
+    /* Grosor y color del borde */
+    /* text-stroke: 2px black; Estándar (para compatibilidad futura) */
+}
+
+span {
+    font-family: 'Bebas Neue';
+}
+
+.q-card__section button {
+    display: none;
+}
+
+.juanidiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #fff;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.juanidiv p {
+    font-family: Quicksand;
+    font-size: 2.5vh;
+    text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black;
+    font-weight: 500;
+    opacity: .7;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.dot-animation {
+    display: flex;
+    gap: 5px;
+}
+
+.dot-1 {
+    animation: fadeInDot 2s ease-in-out infinite;
+    animation-delay: 0.2s !important;
+    display: inline-block;
+}
+
+.dot-2 {
+    animation-delay: 0.4s !important;
+    animation: fadeInDot 2s ease-in-out infinite;
+    display: inline-block;
+    margin-left: -0.1vh;
+}
+
+.dot-3 {
+    animation-delay: 0.6s !important;
+    animation: fadeInDot 2s ease-in-out infinite;
+    display: inline-block;
+    margin-left: -0.1vh;
+}
+
+@keyframes fadeInDot {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+}
